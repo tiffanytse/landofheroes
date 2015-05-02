@@ -22,8 +22,6 @@
   position: static;
 }
 
-
-
 .site-title, 
 .site-tagline{
   @include hide-text;
@@ -63,9 +61,13 @@
   z-index: 1000;
   @media #{$tablet} {
     right: 2em;
+    top: 2.45em;
+    @include rem-fallback(font-size, 1.5);
+  }
+  @media #{$tablet-landscape} {
+    right: 2em;
     top: 1.85em;
     @include rem-fallback(font-size, 2);
-
   }
 }
 
@@ -76,6 +78,7 @@
   padding: .5em;
   @include border-radius(2px);
 }
+
 nav.is-active{
   margin-top: 2.75em;
 }
@@ -85,7 +88,7 @@ nav.is-active{
 }
 
 .feature-banner{
-  height: 425px;
+  height: 430px;
   display: block;
   @media #{$desktop-large} {
     height: 525px;
@@ -102,20 +105,20 @@ nav.is-active{
   right: 0;
   height: 500px;
   display: block;
-  background: transparent url(images/feature-banner.png) no-repeat top center;
+  background: transparent url(images/feature-banner.png) no-repeat top left;
   background-size: cover;
   @media #{$desktop} {
-    background-position: top -50px center;
+    background-position: top -50px left;
   }
   @media #{$desktop-large} {
     height: 600px;
     background-size: 100%;
-    background-position: bottom center; 
+    background-position: bottom left; 
   }
   @media #{$desktop-xlarge} {
     height: 700px;
     background-size: 100%;
-    background-position: center center; 
+    background-position: bottom left; 
   }
 }
 
@@ -123,18 +126,33 @@ nav.is-active{
   .site-navigation .menu-site{
     margin: 0;
     position: absolute;
-    top: 3.1em;
-    right: 19em;
+    @media #{$tablet} {
+      top: 3.1em;
+      right: 16em;
+    }
+    @media #{$tablet-landscape} {
+      top: 3.1em;
+      right: 19em;
+    }
     a{
       color: #fff;
-      @include rem-fallback(font-size, 2);
       @include anti-aliasing;
+      @include rem-fallback(font-size, 1.5);
+      @media #{$tablet-landscape} {
+        @include rem-fallback(font-size, 2);
+      }
     }
+
+
   }
 
   .logged-in .site-navigation .menu-site{
-    top: 2.75em;
-    right: 12em;
+      top: 2.75em;
+      right: 10em;
+    @media #{$tablet-landscape} {
+      top: 2.75em;
+      right: 12em;
+    }
   }
 }
 
@@ -208,4 +226,8 @@ nav.is-active{
       max-width: 100%;
     }
   }
+}
+
+.hide-text{
+  @include hide-text;
 }

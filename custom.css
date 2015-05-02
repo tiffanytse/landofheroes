@@ -8,7 +8,7 @@
 /* 
 * Variables
 */
-/* line 98, scss/_mixins.scss */
+/* line 97, scss/_mixins.scss */
 .cf:before,
 .cf:after {
   content: " ";
@@ -41,10 +41,8 @@
   box-sizing: border-box;
   background: rgba(0, 0, 0, 0.88);
   height: 120px;
-  -webkit-border-radius: 0 0 2px 2px;
   -moz-border-radius: 0 0 2px 2px;
-  -ms-border-radius: 0 0 2px 2px;
-  -o-border-radius: 0 0 2px 2px;
+  -webkit-border-radius: 0;
   border-radius: 0 0 2px 2px;
 }
 
@@ -64,7 +62,7 @@
   position: static;
 }
 
-/* line 28, scss/_pages.scss */
+/* line 25, scss/_pages.scss */
 .site-title,
 .site-tagline {
   text-indent: 100%;
@@ -73,7 +71,7 @@
   display: block;
 }
 
-/* line 33, scss/_pages.scss */
+/* line 31, scss/_pages.scss */
 .site-identity {
   padding: 0;
   position: relative;
@@ -81,13 +79,13 @@
   left: -1em;
 }
 @media only screen and (min-width: 50em) {
-  /* line 33, scss/_pages.scss */
+  /* line 31, scss/_pages.scss */
   .site-identity {
     left: -4em;
   }
 }
 
-/* line 42, scss/_pages.scss */
+/* line 40, scss/_pages.scss */
 .home-link {
   position: absolute;
   height: 100px;
@@ -100,12 +98,12 @@
   float: left;
 }
 
-/* line 54, scss/_pages.scss */
+/* line 52, scss/_pages.scss */
 .site-navigation .menu-button {
   top: 5rem;
 }
 
-/* line 58, scss/_pages.scss */
+/* line 56, scss/_pages.scss */
 .account-links a {
   display: block;
   position: absolute;
@@ -114,7 +112,16 @@
   z-index: 1000;
 }
 @media only screen and (min-width: 50em) {
-  /* line 58, scss/_pages.scss */
+  /* line 56, scss/_pages.scss */
+  .account-links a {
+    right: 2em;
+    top: 2.45em;
+    font-size: 24px;
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (min-width: 63em) {
+  /* line 56, scss/_pages.scss */
   .account-links a {
     right: 2em;
     top: 1.85em;
@@ -123,48 +130,46 @@
   }
 }
 
-/* line 73, scss/_pages.scss */
+/* line 74, scss/_pages.scss */
 .icon-th-list,
 .icon-remove {
   display: block;
   background-color: #fff;
   padding: .5em;
-  -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
-  -ms-border-radius: 2px;
-  -o-border-radius: 2px;
+  -webkit-border-radius: 2px;
   border-radius: 2px;
 }
 
-/* line 79, scss/_pages.scss */
+/* line 82, scss/_pages.scss */
 nav.is-active {
   margin-top: 2.75em;
 }
 
-/* line 83, scss/_pages.scss */
+/* line 86, scss/_pages.scss */
 .icon-remove {
   padding: .5em .6em;
 }
 
-/* line 87, scss/_pages.scss */
+/* line 90, scss/_pages.scss */
 .feature-banner {
-  height: 425px;
+  height: 430px;
   display: block;
 }
 @media only screen and (min-width: 100em) {
-  /* line 87, scss/_pages.scss */
+  /* line 90, scss/_pages.scss */
   .feature-banner {
     height: 525px;
   }
 }
 @media only screen and (min-width: 110em) {
-  /* line 87, scss/_pages.scss */
+  /* line 90, scss/_pages.scss */
   .feature-banner {
     height: 625px;
   }
 }
 
-/* line 98, scss/_pages.scss */
+/* line 101, scss/_pages.scss */
 .main-banner {
   position: absolute;
   top: 0px;
@@ -172,58 +177,89 @@ nav.is-active {
   right: 0;
   height: 500px;
   display: block;
-  background: transparent url(images/feature-banner.png) no-repeat top center;
+  background: transparent url(images/feature-banner.png) no-repeat top left;
   background-size: cover;
 }
 @media only screen and (min-width: 87.5em) {
-  /* line 98, scss/_pages.scss */
+  /* line 101, scss/_pages.scss */
   .main-banner {
-    background-position: top -50px center;
+    background-position: top -50px left;
   }
 }
 @media only screen and (min-width: 100em) {
-  /* line 98, scss/_pages.scss */
+  /* line 101, scss/_pages.scss */
   .main-banner {
     height: 600px;
     background-size: 100%;
-    background-position: bottom center;
+    background-position: bottom left;
   }
 }
 @media only screen and (min-width: 110em) {
-  /* line 98, scss/_pages.scss */
+  /* line 101, scss/_pages.scss */
   .main-banner {
     height: 700px;
     background-size: 100%;
-    background-position: center center;
+    background-position: bottom left;
   }
 }
 
 @media only screen and (min-width: 50em) {
-  /* line 123, scss/_pages.scss */
+  /* line 126, scss/_pages.scss */
   .site-navigation .menu-site {
     margin: 0;
     position: absolute;
+  }
+}
+@media only screen and (min-width: 50em) and (min-width: 50em) {
+  /* line 126, scss/_pages.scss */
+  .site-navigation .menu-site {
+    top: 3.1em;
+    right: 16em;
+  }
+}
+@media only screen and (min-width: 50em) and (min-width: 63em) {
+  /* line 126, scss/_pages.scss */
+  .site-navigation .menu-site {
     top: 3.1em;
     right: 19em;
   }
-  /* line 128, scss/_pages.scss */
+}
+@media only screen and (min-width: 50em) {
+  /* line 137, scss/_pages.scss */
   .site-navigation .menu-site a {
     color: #fff;
-    font-size: 32px;
-    font-size: 2rem;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    font-size: 24px;
+    font-size: 1.5rem;
   }
+}
+@media only screen and (min-width: 50em) and (min-width: 63em) {
+  /* line 137, scss/_pages.scss */
+  .site-navigation .menu-site a {
+    font-size: 32px;
+    font-size: 2rem;
+  }
+}
 
-  /* line 135, scss/_pages.scss */
+@media only screen and (min-width: 50em) {
+  /* line 149, scss/_pages.scss */
+  .logged-in .site-navigation .menu-site {
+    top: 2.75em;
+    right: 10em;
+  }
+}
+@media only screen and (min-width: 50em) and (min-width: 63em) {
+  /* line 149, scss/_pages.scss */
   .logged-in .site-navigation .menu-site {
     top: 2.75em;
     right: 12em;
   }
 }
+
 /* jQuery effects
 ================================================== */
-/* line 144, scss/_pages.scss */
+/* line 162, scss/_pages.scss */
 .accordion-expanded h3 {
   position: relative;
   display: block;
@@ -241,53 +277,51 @@ nav.is-active {
   color: #fff;
 }
 
-/* line 158, scss/_pages.scss */
+/* line 176, scss/_pages.scss */
 .pledge-level {
   padding: 1.5em .5em .5em;
   background-color: #FFFFFF;
   border: 1px solid #e2dedb;
-  -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -o-border-radius: 3px;
+  -webkit-border-radius: 3px;
   border-radius: 3px;
   margin-top: -.5em;
 }
 
-/* line 166, scss/_pages.scss */
+/* line 184, scss/_pages.scss */
 .pledge-limit {
   display: block;
   text-align: center;
   float: none;
 }
 
-/* line 172, scss/_pages.scss */
+/* line 190, scss/_pages.scss */
 .pledge-button {
   text-align: center;
 }
 
-/* line 176, scss/_pages.scss */
+/* line 194, scss/_pages.scss */
 .accordion-expanded h3::before {
   float: right;
   margin-right: 4%;
 }
 
-/* line 181, scss/_pages.scss */
+/* line 199, scss/_pages.scss */
 .accordion-expanded h3:active {
   outline: 0;
 }
 
-/* line 185, scss/_pages.scss */
+/* line 203, scss/_pages.scss */
 .accordion-expanded [data-icon]::before {
   content: '';
 }
 
-/* line 189, scss/_pages.scss */
+/* line 207, scss/_pages.scss */
 .edd-cancel {
   padding-top: 2em;
 }
 
-/* line 193, scss/_pages.scss */
+/* line 211, scss/_pages.scss */
 #main {
   position: relative;
   z-index: 97;
@@ -296,10 +330,17 @@ nav.is-active {
 /**
  * Forms
  */
-/* line 206, scss/_pages.scss */
+/* line 222, scss/_pages.scss */
 .page-template-page-contact-php .ninja-forms-cont .field-wrap,
 .page-template-page-contact-php .ninja-forms-cont input[type="text"],
 .page-template-page-contact-php .ninja-forms-cont text-area {
   width: 100%;
   max-width: 100%;
+}
+
+/* line 231, scss/_pages.scss */
+.hide-text {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
 }
