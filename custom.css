@@ -1,0 +1,304 @@
+/*
+  Use this stylesheet to override the default styles
+  in Franklin. 
+
+  For more information about how child themes work, 
+  see http://codex.wordpress.org/Child_Themes
+*/
+/* 
+* Variables
+*/
+/* line 98, scss/_mixins.scss */
+.cf:before,
+.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+/* line 103, scss/_mixins.scss */
+.cf:after {
+  clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+/* line 111, scss/_mixins.scss */
+.cf {
+  *zoom: 1;
+}
+
+/* line 1, scss/_pages.scss */
+.body-wrapper #header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  max-width: 1170px;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.88);
+  height: 120px;
+  -webkit-border-radius: 0 0 2px 2px;
+  -moz-border-radius: 0 0 2px 2px;
+  -ms-border-radius: 0 0 2px 2px;
+  -o-border-radius: 0 0 2px 2px;
+  border-radius: 0 0 2px 2px;
+}
+
+/* line 13, scss/_pages.scss */
+.logged-in.admin-bar #header {
+  top: 46px;
+}
+@media only screen and (min-width: 782px) {
+  /* line 13, scss/_pages.scss */
+  .logged-in.admin-bar #header {
+    top: 32px;
+  }
+}
+
+/* line 20, scss/_pages.scss */
+.site-container {
+  position: static;
+}
+
+/* line 27, scss/_pages.scss */
+.site-title,
+.site-tagline {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+}
+
+/* line 32, scss/_pages.scss */
+.site-identity {
+  padding: 0;
+  position: relative;
+  top: -2em;
+  left: -1em;
+}
+@media only screen and (min-width: 50em) {
+  /* line 32, scss/_pages.scss */
+  .site-identity {
+    left: -4em;
+  }
+}
+
+/* line 41, scss/_pages.scss */
+.home-link {
+  position: absolute;
+  height: 100px;
+  width: 200px;
+  top: .5em;
+  left: 0em;
+  background: transparent url(images/loh-logo.png) no-repeat top left;
+  background-size: 100%;
+  display: inline-block;
+  float: left;
+}
+
+/* line 53, scss/_pages.scss */
+.site-navigation .menu-button {
+  top: 5rem;
+}
+
+/* line 57, scss/_pages.scss */
+.account-links a {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 1em;
+  z-index: 1000;
+}
+@media only screen and (min-width: 50em) {
+  /* line 57, scss/_pages.scss */
+  .account-links a {
+    right: 2em;
+    top: 1.85em;
+    font-size: 32px;
+    font-size: 2rem;
+  }
+}
+
+/* line 72, scss/_pages.scss */
+.icon-th-list,
+.icon-remove {
+  display: block;
+  background-color: #fff;
+  padding: .5em;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+}
+
+/* line 78, scss/_pages.scss */
+nav.is-active {
+  margin-top: 2.75em;
+}
+
+/* line 82, scss/_pages.scss */
+.icon-remove {
+  padding: .5em .6em;
+}
+
+/* line 86, scss/_pages.scss */
+.feature-banner {
+  height: 425px;
+  display: block;
+}
+@media only screen and (min-width: 100em) {
+  /* line 86, scss/_pages.scss */
+  .feature-banner {
+    height: 525px;
+  }
+}
+@media only screen and (min-width: 110em) {
+  /* line 86, scss/_pages.scss */
+  .feature-banner {
+    height: 625px;
+  }
+}
+
+/* line 97, scss/_pages.scss */
+.main-banner {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  right: 0;
+  height: 500px;
+  display: block;
+  background: transparent url(images/feature-banner.png) no-repeat top center;
+  background-size: cover;
+}
+@media only screen and (min-width: 87.5em) {
+  /* line 97, scss/_pages.scss */
+  .main-banner {
+    background-position: top -50px center;
+  }
+}
+@media only screen and (min-width: 100em) {
+  /* line 97, scss/_pages.scss */
+  .main-banner {
+    height: 600px;
+    background-size: 100%;
+    background-position: bottom center;
+  }
+}
+@media only screen and (min-width: 110em) {
+  /* line 97, scss/_pages.scss */
+  .main-banner {
+    height: 700px;
+    background-size: 100%;
+    background-position: center center;
+  }
+}
+
+@media only screen and (min-width: 50em) {
+  /* line 122, scss/_pages.scss */
+  .site-navigation .menu-site {
+    margin: 0;
+    position: absolute;
+    top: 3.1em;
+    right: 19em;
+  }
+  /* line 127, scss/_pages.scss */
+  .site-navigation .menu-site a {
+    color: #fff;
+    font-size: 32px;
+    font-size: 2rem;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* line 134, scss/_pages.scss */
+  .logged-in .site-navigation .menu-site {
+    top: 2.75em;
+    right: 12em;
+  }
+}
+/* jQuery effects
+================================================== */
+/* line 143, scss/_pages.scss */
+.accordion-expanded h3 {
+  position: relative;
+  display: block;
+  margin-top: 12px;
+  margin-top: 1.2rem;
+  margin-bottom: 0;
+  padding: 24px 4%;
+  padding-top: 2.4rem;
+  padding-bottom: 2.4rem;
+  line-height: 1em;
+  border-radius: 0.4rem 0.4rem 0 0;
+  outline: 0;
+  cursor: pointer;
+  background-color: #323741;
+  color: #fff;
+}
+
+/* line 157, scss/_pages.scss */
+.pledge-level {
+  padding: 1.5em .5em .5em;
+  background-color: #FFFFFF;
+  border: 1px solid #e2dedb;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  margin-top: -.5em;
+}
+
+/* line 165, scss/_pages.scss */
+.pledge-limit {
+  display: block;
+  text-align: center;
+  float: none;
+}
+
+/* line 171, scss/_pages.scss */
+.pledge-button {
+  text-align: center;
+}
+
+/* line 175, scss/_pages.scss */
+.accordion-expanded h3::before {
+  float: right;
+  margin-right: 4%;
+}
+
+/* line 180, scss/_pages.scss */
+.accordion-expanded h3:active {
+  outline: 0;
+}
+
+/* line 184, scss/_pages.scss */
+.accordion-expanded [data-icon]::before {
+  content: '';
+}
+
+/* line 188, scss/_pages.scss */
+.edd-cancel {
+  padding-top: 2em;
+}
+
+/* line 192, scss/_pages.scss */
+.blog #main {
+  position: relative;
+  z-index: 10000;
+}
+
+/**
+ * Forms
+ */
+/* line 205, scss/_pages.scss */
+.page-template-page-contact-php .ninja-forms-cont .field-wrap,
+.page-template-page-contact-php .ninja-forms-cont input[type="text"],
+.page-template-page-contact-php .ninja-forms-cont text-area {
+  width: 100%;
+  max-width: 100%;
+}

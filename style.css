@@ -1,0 +1,21 @@
+/*
+Theme Name: Land of Heroes Child Theme
+Theme URI: http://nextbigthingstudios.net
+Author: Tiffany Tse Design and Development
+Author URI: http://tiffanytse.ca
+Description: A custom theme created for Next Big Thing Studios
+Template: franklin
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: nextbigthingstudios.net
+*/
+
+/*
+	NOTE: 
+
+	This stylesheet is never loaded. It is simply added to register
+	the child theme within Wordpress. 
+
+	Use custom.css for any customisations.
+*/

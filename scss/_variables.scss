@@ -1,0 +1,29 @@
+/* 
+* Variables
+*/
+
+//Colors
+$dark-blue: #323741;
+$med-blue: #224b8c;
+$light-blue: #4E75B4;
+$light-line-grey: #f5f5f5;
+$line-grey: #ddd;
+$black: #222;
+
+// Font Stacks
+$oswald:   'Oswald', 'Helvetica Neue', Helvetica, sans-serif;
+
+// Screen sizes
+// -> to include write the following
+// @media #{$variable-name} { ... }
+
+$mobile: "only screen and (min-width: 20em)"; //320px
+$mobile-landscape: "only screen and (min-width: 37.5em)"; //600px
+$tablet: "only screen and (min-width: 50em)"; //760px
+$tablet-landscape: "only screen and (min-width: 63em)"; //960px
+$desktop-small: "only screen and (min-width: 75em)"; //1200px
+$desktop: "only screen and (min-width: 87.5em)"; //1400px
+$desktop-large: "only screen and (min-width: 100em)"; //1600px
+$desktop-xlarge: "only screen and (min-width: 110em)"; //1760px
+
+@import "compass";

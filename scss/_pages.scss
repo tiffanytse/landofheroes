@@ -1,0 +1,210 @@
+.body-wrapper #header{
+  position: fixed;
+  top: 0; 
+  width: 100%;
+  max-width: 1170px;
+  box-sizing: border-box;
+  @include background(rgba(0,0,0,0.88));
+  height: 120px; 
+  //background-color: black; 
+  @include border-radius(0 0 2px 2px);
+}
+
+.logged-in.admin-bar #header{
+  top: 46px;
+  @media only screen and (min-width: 782px){
+    top: 32px;
+  }
+}
+
+.site-container{
+  position: static;
+}
+
+
+
+.site-title, 
+.site-tagline{
+  @include hide-text;
+  display: block;
+}
+
+.site-identity{
+  padding: 0;
+  position: relative;
+  top: -2em;
+  left: -1em;
+  @media #{$tablet} {
+    left: -4em;
+  }
+}
+.home-link{
+  position: absolute;
+  height: 100px;
+  width: 200px;
+  top: .5em;
+  left: 0em;
+  background: transparent url(images/loh-logo.png) no-repeat top left;
+  background-size: 100%;
+  display: inline-block;
+  float: left;
+}
+
+.site-navigation .menu-button{
+  top: 5rem;
+}
+
+.account-links a{
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 1em;
+  z-index: 1000;
+  @media #{$tablet} {
+    right: 2em;
+    top: 1.85em;
+    @include rem-fallback(font-size, 2);
+
+  }
+}
+
+.icon-th-list, 
+.icon-remove{
+  display: block;
+  background-color: #fff;
+  padding: .5em;
+  @include border-radius(2px);
+}
+nav.is-active{
+  margin-top: 2.75em;
+}
+
+.icon-remove{
+  padding: .5em .6em;
+}
+
+.feature-banner{
+  height: 425px;
+  display: block;
+  @media #{$desktop-large} {
+    height: 525px;
+  }
+  @media #{$desktop-xlarge}{
+    height: 625px;
+  }
+}
+
+.main-banner{
+  position: absolute;
+  top: 0px;
+  left: 0;
+  right: 0;
+  height: 500px;
+  display: block;
+  background: transparent url(images/feature-banner.png) no-repeat top center;
+  background-size: cover;
+  @media #{$desktop} {
+    background-position: top -50px center;
+  }
+  @media #{$desktop-large} {
+    height: 600px;
+    background-size: 100%;
+    background-position: bottom center; 
+  }
+  @media #{$desktop-xlarge} {
+    height: 700px;
+    background-size: 100%;
+    background-position: center center; 
+  }
+}
+
+@media #{$tablet} {
+  .site-navigation .menu-site{
+    margin: 0;
+    position: absolute;
+    top: 3.1em;
+    right: 19em;
+    a{
+      color: #fff;
+      @include rem-fallback(font-size, 2);
+      @include anti-aliasing;
+    }
+  }
+
+  .logged-in .site-navigation .menu-site{
+    top: 2.75em;
+    right: 12em;
+  }
+}
+
+
+/* jQuery effects
+================================================== */
+.accordion-expanded h3 { 
+  position: relative;
+  display: block;
+  margin-top: 12px; margin-top: 1.2rem;
+  margin-bottom: 0;
+  padding: 24px 4%; padding-top: 2.4rem; padding-bottom: 2.4rem;
+  line-height: 1em;
+  border-radius: 0.4rem 0.4rem 0 0;
+  outline: 0; 
+  cursor: pointer;
+  background-color: $dark-blue;
+  color: #fff;
+}
+
+.pledge-level{
+  padding: 1.5em .5em .5em;
+  background-color: #FFFFFF;
+  border: 1px solid #e2dedb;
+  @include border-radius(3px);
+  margin-top: -.5em;
+}
+
+.pledge-limit{
+  display: block;
+  text-align: center;
+  float: none;
+}
+
+.pledge-button{
+  text-align: center;
+}
+
+.accordion-expanded h3::before {
+  float: right;
+  margin-right: 4%;
+}
+
+.accordion-expanded h3:active {
+  outline: 0;
+}
+
+.accordion-expanded [data-icon]::before{
+  content: '';
+}
+
+.edd-cancel{
+  padding-top: 2em;
+}
+
+.blog #main{
+  position: relative;
+  z-index: 10000;
+}
+
+/**
+ * Forms
+ */
+
+.page-template-page-contact-php{
+  .ninja-forms-cont{
+    .field-wrap,
+    input[type="text"], 
+    text-area{
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+}
