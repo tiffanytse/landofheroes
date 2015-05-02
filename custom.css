@@ -34,6 +34,7 @@
 /* line 1, scss/_pages.scss */
 .body-wrapper #header {
   position: fixed;
+  z-index: 98;
   top: 0;
   width: 100%;
   max-width: 1170px;
@@ -47,23 +48,23 @@
   border-radius: 0 0 2px 2px;
 }
 
-/* line 13, scss/_pages.scss */
+/* line 14, scss/_pages.scss */
 .logged-in.admin-bar #header {
   top: 46px;
 }
 @media only screen and (min-width: 782px) {
-  /* line 13, scss/_pages.scss */
+  /* line 14, scss/_pages.scss */
   .logged-in.admin-bar #header {
     top: 32px;
   }
 }
 
-/* line 20, scss/_pages.scss */
+/* line 21, scss/_pages.scss */
 .site-container {
   position: static;
 }
 
-/* line 27, scss/_pages.scss */
+/* line 28, scss/_pages.scss */
 .site-title,
 .site-tagline {
   text-indent: 100%;
@@ -72,7 +73,7 @@
   display: block;
 }
 
-/* line 32, scss/_pages.scss */
+/* line 33, scss/_pages.scss */
 .site-identity {
   padding: 0;
   position: relative;
@@ -80,13 +81,13 @@
   left: -1em;
 }
 @media only screen and (min-width: 50em) {
-  /* line 32, scss/_pages.scss */
+  /* line 33, scss/_pages.scss */
   .site-identity {
     left: -4em;
   }
 }
 
-/* line 41, scss/_pages.scss */
+/* line 42, scss/_pages.scss */
 .home-link {
   position: absolute;
   height: 100px;
@@ -99,12 +100,12 @@
   float: left;
 }
 
-/* line 53, scss/_pages.scss */
+/* line 54, scss/_pages.scss */
 .site-navigation .menu-button {
   top: 5rem;
 }
 
-/* line 57, scss/_pages.scss */
+/* line 58, scss/_pages.scss */
 .account-links a {
   display: block;
   position: absolute;
@@ -113,7 +114,7 @@
   z-index: 1000;
 }
 @media only screen and (min-width: 50em) {
-  /* line 57, scss/_pages.scss */
+  /* line 58, scss/_pages.scss */
   .account-links a {
     right: 2em;
     top: 1.85em;
@@ -122,7 +123,7 @@
   }
 }
 
-/* line 72, scss/_pages.scss */
+/* line 73, scss/_pages.scss */
 .icon-th-list,
 .icon-remove {
   display: block;
@@ -135,35 +136,35 @@
   border-radius: 2px;
 }
 
-/* line 78, scss/_pages.scss */
+/* line 79, scss/_pages.scss */
 nav.is-active {
   margin-top: 2.75em;
 }
 
-/* line 82, scss/_pages.scss */
+/* line 83, scss/_pages.scss */
 .icon-remove {
   padding: .5em .6em;
 }
 
-/* line 86, scss/_pages.scss */
+/* line 87, scss/_pages.scss */
 .feature-banner {
   height: 425px;
   display: block;
 }
 @media only screen and (min-width: 100em) {
-  /* line 86, scss/_pages.scss */
+  /* line 87, scss/_pages.scss */
   .feature-banner {
     height: 525px;
   }
 }
 @media only screen and (min-width: 110em) {
-  /* line 86, scss/_pages.scss */
+  /* line 87, scss/_pages.scss */
   .feature-banner {
     height: 625px;
   }
 }
 
-/* line 97, scss/_pages.scss */
+/* line 98, scss/_pages.scss */
 .main-banner {
   position: absolute;
   top: 0px;
@@ -175,13 +176,13 @@ nav.is-active {
   background-size: cover;
 }
 @media only screen and (min-width: 87.5em) {
-  /* line 97, scss/_pages.scss */
+  /* line 98, scss/_pages.scss */
   .main-banner {
     background-position: top -50px center;
   }
 }
 @media only screen and (min-width: 100em) {
-  /* line 97, scss/_pages.scss */
+  /* line 98, scss/_pages.scss */
   .main-banner {
     height: 600px;
     background-size: 100%;
@@ -189,7 +190,7 @@ nav.is-active {
   }
 }
 @media only screen and (min-width: 110em) {
-  /* line 97, scss/_pages.scss */
+  /* line 98, scss/_pages.scss */
   .main-banner {
     height: 700px;
     background-size: 100%;
@@ -198,14 +199,14 @@ nav.is-active {
 }
 
 @media only screen and (min-width: 50em) {
-  /* line 122, scss/_pages.scss */
+  /* line 123, scss/_pages.scss */
   .site-navigation .menu-site {
     margin: 0;
     position: absolute;
     top: 3.1em;
     right: 19em;
   }
-  /* line 127, scss/_pages.scss */
+  /* line 128, scss/_pages.scss */
   .site-navigation .menu-site a {
     color: #fff;
     font-size: 32px;
@@ -214,7 +215,7 @@ nav.is-active {
     -moz-osx-font-smoothing: grayscale;
   }
 
-  /* line 134, scss/_pages.scss */
+  /* line 135, scss/_pages.scss */
   .logged-in .site-navigation .menu-site {
     top: 2.75em;
     right: 12em;
@@ -222,7 +223,7 @@ nav.is-active {
 }
 /* jQuery effects
 ================================================== */
-/* line 143, scss/_pages.scss */
+/* line 144, scss/_pages.scss */
 .accordion-expanded h3 {
   position: relative;
   display: block;
@@ -240,7 +241,7 @@ nav.is-active {
   color: #fff;
 }
 
-/* line 157, scss/_pages.scss */
+/* line 158, scss/_pages.scss */
 .pledge-level {
   padding: 1.5em .5em .5em;
   background-color: #FFFFFF;
@@ -253,49 +254,49 @@ nav.is-active {
   margin-top: -.5em;
 }
 
-/* line 165, scss/_pages.scss */
+/* line 166, scss/_pages.scss */
 .pledge-limit {
   display: block;
   text-align: center;
   float: none;
 }
 
-/* line 171, scss/_pages.scss */
+/* line 172, scss/_pages.scss */
 .pledge-button {
   text-align: center;
 }
 
-/* line 175, scss/_pages.scss */
+/* line 176, scss/_pages.scss */
 .accordion-expanded h3::before {
   float: right;
   margin-right: 4%;
 }
 
-/* line 180, scss/_pages.scss */
+/* line 181, scss/_pages.scss */
 .accordion-expanded h3:active {
   outline: 0;
 }
 
-/* line 184, scss/_pages.scss */
+/* line 185, scss/_pages.scss */
 .accordion-expanded [data-icon]::before {
   content: '';
 }
 
-/* line 188, scss/_pages.scss */
+/* line 189, scss/_pages.scss */
 .edd-cancel {
   padding-top: 2em;
 }
 
-/* line 192, scss/_pages.scss */
-.blog #main {
+/* line 193, scss/_pages.scss */
+#main {
   position: relative;
-  z-index: 10000;
+  z-index: 97;
 }
 
 /**
  * Forms
  */
-/* line 205, scss/_pages.scss */
+/* line 206, scss/_pages.scss */
 .page-template-page-contact-php .ninja-forms-cont .field-wrap,
 .page-template-page-contact-php .ninja-forms-cont input[type="text"],
 .page-template-page-contact-php .ninja-forms-cont text-area {

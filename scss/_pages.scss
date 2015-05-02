@@ -1,5 +1,6 @@
 .body-wrapper #header{
   position: fixed;
+  z-index: 98;
   top: 0; 
   width: 100%;
   max-width: 1170px;
@@ -189,9 +190,9 @@ nav.is-active{
   padding-top: 2em;
 }
 
-.blog #main{
+#main{
   position: relative;
-  z-index: 10000;
+  z-index: 97;
 }
 
 /**
