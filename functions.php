@@ -34,3 +34,12 @@ function custom_login_css() {
   echo '<link rel="stylesheet" type="text/css" href="'.get_stylesheet_directory_uri().'/login.css" />';
 }
   add_action('login_head', 'custom_login_css');
+
+
+// Re-enable paypal shipping 
+
+function pw_edd_paypal_shipping_args( $args, $purchase_data ) {
+  $args['no_shipping'] = '2';
+  return $args;
+}
+add_filter( 'edd_paypal_redirect_args', 'pw_edd_paypal_shipping_args', 10, 2 );
