@@ -31,17 +31,17 @@
 
 				<?php endif ?>
 
-				<!-- Replace below with youtube video link add 
+				<!-- Replace below with youtube video link add -->
 
-			<section class="campaign-video">
-				<div class="fit-video">
+			<section class="campaign-video attachment-post-thumbnail wp-post-image">
+				<div class="fit-video" style="margin-bottom:0;">
 					<div class="fluid-width-video-wrapper" style="padding-top: 56.2674094707521%;">
-						<iframe src="https://www.youtube.com/embed/CadqB_2n2JQ?feature=oembed" frameborder="0" allowfullscreen="" id="fitvid987552"></iframe>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/ITkGki6BB_8" frameborder="0" allowfullscreen="" id="fitvid987552"></iframe>
 					</div>
 				</div>	
 			</section>
-			-->
-				<?php echo get_the_post_thumbnail( $campaign->ID ) ?>
+			
+				<?php //echo get_the_post_thumbnail( $campaign->ID ) ?>
 			</div>
 		<?php endif ?>
 
