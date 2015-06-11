@@ -28,6 +28,16 @@
   display: block;
 }
 
+.fit-video,
+.campaign-video{
+  margin-bottom: 0;
+}
+
+.content-wrapper .campaign-video{
+  display: none;
+  visibility: hidden;
+}
+
 .site-identity{
   padding: 0;
   position: relative;
@@ -88,15 +98,29 @@ nav.is-active{
 }
 
 .feature-banner{
-  height: 430px;
+  height: 465px;
   display: block;
   @media #{$desktop-large} {
-    height: 525px;
+    height: 555px;
   }
   @media #{$desktop-xlarge}{
-    height: 625px;
+    height: 655px;
   }
 }
+
+.logged-in{
+  .feature-banner{
+    height: 430px;
+    display: block;
+    @media #{$desktop-large} {
+      height: 525px;
+    }
+    @media #{$desktop-xlarge}{
+      height: 625px;
+    }
+  }
+}
+
 
 .main-banner{
   position: absolute;

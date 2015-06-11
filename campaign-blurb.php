@@ -14,7 +14,6 @@
 		</div>				
 
 		<?php if ( has_post_thumbnail( $campaign->ID ) ) : ?>
-
 			<div class="campaign-image">
 
 				<?php 
@@ -31,17 +30,9 @@
 
 				<?php endif ?>
 
-				<!-- Replace below with youtube video link add -->
-
-			<section class="campaign-video attachment-post-thumbnail wp-post-image">
-				<div class="fit-video" style="margin-bottom:0;">
-					<div class="fluid-width-video-wrapper" style="padding-top: 56.2674094707521%;">
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/ITkGki6BB_8" frameborder="0" allowfullscreen="" id="fitvid987552"></iframe>
-					</div>
-				</div>	
-			</section>
-			
-				<?php //echo get_the_post_thumbnail( $campaign->ID ) ?>
+				<section class="campaign-video attachment-post-thumbnail wp-post-image">
+    			<?php echo franklin_campaign_video( $campaign ) ?>
+				</section>
 			</div>
 		<?php endif ?>
 

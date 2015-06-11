@@ -43,3 +43,34 @@ function pw_edd_paypal_shipping_args( $args, $purchase_data ) {
   return $args;
 }
 add_filter( 'edd_paypal_redirect_args', 'pw_edd_paypal_shipping_args', 10, 2 );
+
+
+if ( !function_exists( 'franklin_campaign_video' ) ) {
+
+  function franklin_campaign_video($campaign) {
+    global $wp_embed;
+
+    // If a campaign object was not passed, do nothing
+    if ( !$campaign instanceof ATCF_Campaign )
+      return;
+
+    // If there is no video, do nothing
+    if ( !$campaign->video() || trim( $campaign->video() ) == 'http://' )
+      return;   
+    ?>
+
+    <!-- Campaign video -->
+    <section class="campaign-video">
+      <?php echo $wp_embed->run_shortcode('[embed]'.$campaign->video().'[/embed]' ) ?>
+    </section>
+    <!-- End campaign video -->
+
+    <?php
+  }
+}
+
+
+remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
+remove_action( 'wp_print_styles', 'print_emoji_styles' );
+
+
